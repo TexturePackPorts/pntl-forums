@@ -1,7 +1,7 @@
 export default async function UserProfile({ params }) {
   const { username } = params;
 
-  const res = await fetch(`https://pntl-forums.vercel.app//api/users/${username}`);
+  const res = await fetch(`https://pntl-forums.vercel.app/api/users/${username}`);
   const user = await res.json();
 
   if (res.status !== 200) {
